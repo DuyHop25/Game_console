@@ -22,17 +22,11 @@ while (turn <= 3){
     }
     else if(soDoan < soBiMat){
         turn++;
-        if(turn == 2)
-            console.log("Số của bạn nhỏ quá, bạn còn 2 lượt chơi ");
-        if(turn == 3)
-            console.log("Số của bạn nhỏ quá, bạn còn 1 lượt chơi ");
+            console.log("Số của bạn nhỏ quá, bạn còn",turn,"lượt chơi");
     }
     else {
         turn++;
-        if(turn == 2)
-            console.log("Số của bạn lớn quá, bạn còn 2 lượt chơi ");
-        if(turn == 3)
-            console.log("Số của bạn lớn quá, bạn còn 1 lượt chơi ");
+        console.log("Số của bạn lớn quá, bạn còn",turn,"lượt chơi");
 
     }
     if ( turn > 3)
