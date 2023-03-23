@@ -6,7 +6,6 @@ const min: Number = 0 ;
 const max: Number = 100 ;
 let turn: number = 1;
 let soBiMat:number = Math.floor(Math.random() * (Number(max) - Number(min) + 1) ) + Number(min);
-console.log(soBiMat);
 let score: number = 0;
 // Xu ly tinh toan 
 while (turn <= 3){
