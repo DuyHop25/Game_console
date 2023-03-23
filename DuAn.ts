@@ -24,14 +24,8 @@ else{
         console.log("Số của bạn lớn quá, bạn còn",turn,"lượt chơi")}
     soDoan=Number(question("Nhap so cua ban: "));
     if(soDoan==soBiMat) {
-        if(turn == 2){
             score +=50
             console.log("Bạn đã đoán đúng:",score,"điểm");
-        }
-        else{
-            score +=30
-            console.log("Bạn đã đoán đúng:",score,"điểm");
-        }
     }
     else{
         if(soDoan<soBiMat){
@@ -42,13 +36,10 @@ else{
             turn --;
             console.log("Số của bạn lớn quá, bạn còn",turn,"lượt chơi")}
         soDoan=Number(question("Nhap so cua ban: "));
-        if(soDoan==soBiMat) {
-            if(turn == 2){
-                score +=50
-                console.log("Bạn đã đoán đúng:",score,"điểm");}
-            else{
-                score +=30
-                console.log("Bạn đã đoán đúng:",score,"điểm");}}
+        if(soDoan==soBiMat){
+            score +=30
+            console.log("Bạn đã đoán đúng:",score,"điểm");
+        }
         else 
         console.log("Game over");
     }
